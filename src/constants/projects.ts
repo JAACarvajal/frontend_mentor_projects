@@ -1,8 +1,10 @@
 export default [
     {
-        name: 'sample name'
+        name: 'QR Code',
+        route: '/qrcode'
     },
     {
-        name: 'sample name 2'
+        name: 'sample name 2',
+        route: '/qrcode'
     }
 ]

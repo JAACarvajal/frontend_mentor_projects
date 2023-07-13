@@ -1,17 +1,55 @@
 <template>
     <div ref="" class="flex flex-col w-full lp:w-1/2 h-40 p-5 border">
-        <h1>{{ props.projectData?.name }}</h1>
-        <button @click="openProject" class="w-full p-2 border">
-            View Design
-        </button>
+        <h1>{{ projectName }}</h1>
+        <router-link to="/qrcode">View Design</router-link>
+        <!-- <a :href="projectRoute">
+            <button @click="openProject" class="w-full p-2 border">
+                View Design
+            </button>
+        </a> -->
+
     </div>
 </template>
-<script setup lang="ts">
 
-const props = defineProps(['projectData']);
+<script lang="ts">
+import { PropType } from 'vue';
 
-function openProject() {
-    console.log('asd');
+interface ProjectInterface {
+    name: string,
+    route: any,
+}
+
+export default {
+    props: {
+        projectData: {
+            type: Object as PropType<ProjectInterface>,
+            require: true
+        },
+    },
+    /**
+     * main setup() method
+     * @param props
+     */
+    setup(props) {
+        // Get project name from props
+        const projectName = props.projectData?.name;
+        const projectRoute = props.projectData?.route;
+
+        // Expose to template and other options API hooks
+        return {
+            projectName,
+            projectRoute,
+            openProject
+        }
+    }
+}
+
+/**
+ * Open project function
+ */
+function openProject(): void {
+    console.log('open project');
+
 }
 
 </script>
