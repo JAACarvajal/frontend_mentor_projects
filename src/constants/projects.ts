@@ -4,7 +4,7 @@ export default [
         route: '/qrcode'
     },
     {
-        name: 'sample name 2',
-        route: '/qrcode'
+        name: 'Age Calculator',
+        route: '/agecalculator'
     }
 ]

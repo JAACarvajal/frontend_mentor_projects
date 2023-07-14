@@ -1,13 +1,11 @@
 <template>
-    <div ref="" class="flex flex-col w-full lp:w-1/2 h-40 p-5 border">
+    <div class="flex flex-col w-full lp:w-1/5 h-40 p-5 border">
         <h1>{{ projectName }}</h1>
-        <router-link to="/qrcode">View Design</router-link>
-        <!-- <a :href="projectRoute">
-            <button @click="openProject" class="w-full p-2 border">
+        <a :href="projectRoute">
+            <button @click="$router.push(projectRoute)" class="w-full p-2 border">
                 View Design
             </button>
-        </a> -->
-
+        </a>
     </div>
 </template>
 
@@ -38,18 +36,8 @@ export default {
         // Expose to template and other options API hooks
         return {
             projectName,
-            projectRoute,
-            openProject
+            projectRoute
         }
     }
 }
-
-/**
- * Open project function
- */
-function openProject(): void {
-    console.log('open project');
-
-}
-
 </script>
