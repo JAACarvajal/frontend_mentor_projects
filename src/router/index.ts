@@ -1,5 +1,6 @@
 import Project from "../components/Projects.vue";
 import QRCode from "../components/projects/QRCode/Main.vue";
+import AgeCalculator from "../components/projects/AgeCalculator/Main.vue";
 
 export default [
     {
@@ -9,5 +10,9 @@ export default [
     {
         path: '/qrcode',
         component: QRCode
+    },
+    {
+        path: '/agecalculator',
+        component: AgeCalculator
     },
 ];

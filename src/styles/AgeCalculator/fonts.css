@@ -1,0 +1,29 @@
+@font-face {
+    font-family: poppins-italic;
+    src: url(../../assets/AgeCalculator/fonts/Poppins-Italic.ttf);
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(../../assets/AgeCalculator/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(../../assets/AgeCalculator/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold-italic;
+    src: url(../../assets/AgeCalculator/fonts/Poppins-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: poppins-extra-bold;
+    src: url(../../assets/AgeCalculator/fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: poppins-extra-bold-italic;
+    src: url(../../assets/AgeCalculator/fonts/Poppins-ExtraBoldItalic.ttf);
+}
