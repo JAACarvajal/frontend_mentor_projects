@@ -6,3 +6,14 @@
     box-sizing: border-box;
     background: rgb(0, 100, 0, 0.1);
 } */
+
+/* Remove arrows in number type inputs */
+@layer base {
+    input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number'] {
+      -webkit-appearance: none;
+      margin: 0;
+      -moz-appearance: textfield !important;
+    }
+ }

@@ -8,9 +8,15 @@
 import ProjectCard from './ProjectCard.vue';
 import ProjectList from '../constants/projects';
 export default {
+    /**
+     * Components
+     */
     components: {
         ProjectCard
     },
+    /**
+     * Setup method
+     */
     setup() {
         const projectList = ProjectList;
 

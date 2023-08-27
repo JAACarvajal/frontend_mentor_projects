@@ -25,7 +25,7 @@ export default {
         },
     },
     /**
-     * main setup() method
+     * Setup method
      * @param props
      */
     setup(props) {
